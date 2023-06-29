@@ -7,7 +7,7 @@ namespace CarAgency.Stores
 {
     public class CarAgencyStore
     {
-        private readonly Models.CarAgencyDealership _hotel;
+        private readonly Models.CarAgencyDealership _carAgency;
         private readonly List<Reservation> _reservations;
         private Lazy<Task> _initializeLazy;
 
@@ -15,9 +15,9 @@ namespace CarAgency.Stores
 
         public event Action<Reservation> ReservationMade;
 
-        public CarAgencyStore(Models.CarAgencyDealership hotel)
+        public CarAgencyStore(Models.CarAgencyDealership CarAgency)
         {
-            _hotel = hotel;
+            _carAgency = CarAgency;
             _initializeLazy = new Lazy<Task>(Initialize);
 
             _reservations = new List<Reservation>();
@@ -38,7 +38,7 @@ namespace CarAgency.Stores
 
         public async Task MakeReservation(Reservation reservation)
         {
-            await _hotel.MakeReservation(reservation);
+            await _carAgency.MakeReservation(reservation);
 
             _reservations.Add(reservation);
 
@@ -52,7 +52,7 @@ namespace CarAgency.Stores
 
         private async Task Initialize()
         {
-            IEnumerable<Reservation> reservations = await _hotel.GetAllReservations();
+            IEnumerable<Reservation> reservations = await _carAgency.GetAllReservations();
 
             _reservations.Clear();
             _reservations.AddRange(reservations);

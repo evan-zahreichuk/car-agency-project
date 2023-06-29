@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CarAgency.Migrations.Initial" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230627190542_Initial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Migrations.CarAgencyDbContextModelSnapshot" Collapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\CarAgencyDbContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Views.MakeReservationView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MakeReservationView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.Views.ReservationListingView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="6.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ReservationListingView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.Commands.AsyncCommandBase" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABgAQAAEAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Commands\AsyncCommandBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Commands.CommandBase" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Commands\CommandBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarAgency.Commands.LoadReservationsCommand" Collapsed="true">
+    <Position X="7.75" Y="7.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Commands\LoadReservationsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Commands.MakeReservationCommand" Collapsed="true">
+    <Position X="5.75" Y="7.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAFAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Commands\MakeReservationCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Commands.NavigateCommand&lt;TViewModel&gt;" Collapsed="true">
+    <Position X="4.25" Y="6.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\NavigateCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Models.CarAgencyDealership" Collapsed="true">
+    <Position X="12.25" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Models\CarAgencyDealership.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Models.CarID" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAAAAAABiA=</HashCode>
+      <FileName>Models\CarID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Models.CarList" Collapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAQAAAAAAAAQAAIAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\CarList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Models.Reservation" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAQAAAABAIAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Reservation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Exceptions.InvalidReservationTimeRangeException" Collapsed="true">
+    <Position X="12.25" Y="4.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidReservationTimeRangeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Exceptions.ReservationConflictException" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ReservationConflictException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.DbContexts.CarAgencyDbContext" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbContexts\CarAgencyDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.DbContexts.CarAgencyDbContextFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>DbContexts\CarAgencyDbContextFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.DbContexts.CarAgencyDesignTimeDbContextFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbContexts\CarAgencyDesignTimeDbContextFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.DbContexts.InMemoryCarAgencyDbContextFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>DbContexts\InMemoryCarAgencyDbContextFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.ViewModels.MakeReservationViewModel" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>QCAAEAAAgAAAIAIBAxAAAQAgEAIARAAIAAIAAEAhpAQ=</HashCode>
+      <FileName>ViewModels\MakeReservationViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarAgency.ViewModels.ReservationListingViewModel" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAAACCCAAEAAEgAAAAAFAAAAwAAAAAAAAAAEAAI=</HashCode>
+      <FileName>ViewModels\ReservationListingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.ViewModels.ReservationViewModel" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAQAAAAAgAAAAAAAABAAAAEAAAAA=</HashCode>
+      <FileName>ViewModels\ReservationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.ViewModels.ViewModelBase" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CarAgency.Stores.CarAgencyStore" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAgAAAAAAAAQAAEAAAAIEAAAAAwAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Stores\CarAgencyStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Stores.NavigationStore" Collapsed="true">
+    <Position X="12.25" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAIEAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Stores\NavigationStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Services.ReservationConflictValidators.DatabaseReservationConflictValidator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ReservationConflictValidators\DatabaseReservationConflictValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.Services.ReservationProviders.DatabaseReservationProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ReservationProviders\DatabaseReservationProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.Services.ReservationCreators.DatabaseReservationCreator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ReservationCreators\DatabaseReservationCreator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.Services.NavigationService&lt;TViewModel&gt;" Collapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAA=</HashCode>
+      <FileName>Services\NavigationService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.DTOs.ReservationDTO" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAQAAAAAAIAAgAAAAAAAAAAAABAA=</HashCode>
+      <FileName>DTOs\ReservationDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.HostBuilders.AddViewModelsHostBuilderExtensions" Collapsed="true">
+    <Position X="12.25" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>HostBuilders\AddViewModelsHostBuilderExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.Converters.InverseBooleanToVisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\InverseBooleanToVisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CarAgency.App" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarAgency.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="CarAgency.DbContexts.ICarAgencyDbContextFactory" Collapsed="true">
+    <Position X="12.25" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbContexts\ICarAgencyDbContextFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CarAgency.Services.ReservationConflictValidators.IReservationConflictValidator" Collapsed="true">
+    <Position X="14.5" Y="7.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ReservationConflictValidators\IReservationConflictValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CarAgency.Services.ReservationProviders.IReservationProvider" Collapsed="true">
+    <Position X="18" Y="7.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ReservationProviders\IReservationProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CarAgency.Services.ReservationCreators.IReservationCreator" Collapsed="true">
+    <Position X="16.25" Y="7.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ReservationCreators\IReservationCreator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

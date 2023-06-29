@@ -8,12 +8,12 @@ namespace CarAgency.Commands
     public class LoadReservationsCommand : AsyncCommandBase
     {
         private readonly ReservationListingViewModel _viewModel;
-        private readonly CarAgencyStore _hotelStore;
+        private readonly CarAgencyStore _carAgencyStore;
 
-        public LoadReservationsCommand(ReservationListingViewModel viewModel, CarAgencyStore hotelStore)
+        public LoadReservationsCommand(ReservationListingViewModel viewModel, CarAgencyStore CarAgencyStore)
         {
             _viewModel = viewModel;
-            _hotelStore = hotelStore;
+            _carAgencyStore = CarAgencyStore;
         }
 
         public override async Task ExecuteAsync(object parameter)
@@ -23,9 +23,9 @@ namespace CarAgency.Commands
 
             try
             {
-                await _hotelStore.Load();
+                await _carAgencyStore.Load();
 
-                _viewModel.UpdateReservations(_hotelStore.Reservations);
+                _viewModel.UpdateReservations(_carAgencyStore.Reservations);
             }
             catch (Exception)
             {

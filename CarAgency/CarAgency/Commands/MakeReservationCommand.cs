@@ -12,15 +12,15 @@ namespace CarAgency.Commands
     public class MakeReservationCommand : AsyncCommandBase
     {
         private readonly MakeReservationViewModel _makeReservationViewModel;
-        private readonly CarAgencyStore _hotelStore;
+        private readonly CarAgencyStore _carAgencyStore;
         private readonly NavigationService<ReservationListingViewModel> _reservationViewNavigationService;
 
         public MakeReservationCommand(MakeReservationViewModel makeReservationViewModel,
-            CarAgencyStore hotelStore,
+            CarAgencyStore CarAgencyStore,
             NavigationService<ReservationListingViewModel> reservationViewNavigationService)
         {
             _makeReservationViewModel = makeReservationViewModel;
-            _hotelStore = hotelStore;
+            _carAgencyStore = CarAgencyStore;
             _reservationViewNavigationService = reservationViewNavigationService;
 
             _makeReservationViewModel.PropertyChanged += OnViewModelPropertyChanged;
@@ -44,7 +44,7 @@ namespace CarAgency.Commands
 
             try
             {
-                await _hotelStore.MakeReservation(reservation);
+                await _carAgencyStore.MakeReservation(reservation);
 
                 // TODO: Abstract this for testing! 
                 //MessageBox.Show("Successfully reserved car.", "Success",

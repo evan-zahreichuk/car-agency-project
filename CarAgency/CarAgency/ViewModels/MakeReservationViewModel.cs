@@ -146,9 +146,9 @@ namespace CarAgency.ViewModels
 
         public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
 
-        public MakeReservationViewModel(CarAgencyStore hotelStore, NavigationService<ReservationListingViewModel> reservationViewNavigationService)
+        public MakeReservationViewModel(CarAgencyStore CarAgencyStore, NavigationService<ReservationListingViewModel> reservationViewNavigationService)
         {
-            SubmitCommand = new MakeReservationCommand(this, hotelStore, reservationViewNavigationService);
+            SubmitCommand = new MakeReservationCommand(this, CarAgencyStore, reservationViewNavigationService);
             CancelCommand = new NavigateCommand<ReservationListingViewModel>(reservationViewNavigationService);
 
             _propertyNameToErrorsDictionary = new Dictionary<string, List<string>>();

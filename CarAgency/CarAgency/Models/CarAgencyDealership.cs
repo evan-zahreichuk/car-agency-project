@@ -19,7 +19,7 @@ namespace CarAgency.Models
         /// <summary>
         /// Get all reservations.
         /// </summary>
-        /// <returns>All reservations in the hotel reservation book.</returns>
+        /// <returns>All reservations in the CarAgency reservation book.</returns>
         public async Task<IEnumerable<Reservation>> GetAllReservations()
         {
             return await _carList.GetAllReservations();

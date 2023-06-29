@@ -12,7 +12,7 @@ namespace CarAgency.ViewModels
 {
     public class ReservationListingViewModel : ViewModelBase
     {
-        private readonly CarAgencyStore _hotelStore;
+        private readonly CarAgencyStore _carAgencyStore;
 
         private readonly ObservableCollection<ReservationViewModel> _reservations;
 
@@ -55,21 +55,21 @@ namespace CarAgency.ViewModels
         public ICommand LoadReservationsCommand { get; }
         public ICommand MakeReservationCommand { get; }
 
-        public ReservationListingViewModel(CarAgencyStore hotelStore, NavigationService<MakeReservationViewModel> makeReservationNavigationService)
+        public ReservationListingViewModel(CarAgencyStore CarAgencyStore, NavigationService<MakeReservationViewModel> makeReservationNavigationService)
         {
-            _hotelStore = hotelStore;
+            _carAgencyStore = CarAgencyStore;
             _reservations = new ObservableCollection<ReservationViewModel>();
 
-            LoadReservationsCommand = new LoadReservationsCommand(this, hotelStore);
+            LoadReservationsCommand = new LoadReservationsCommand(this, CarAgencyStore);
             MakeReservationCommand = new NavigateCommand<MakeReservationViewModel>(makeReservationNavigationService);
 
-            _hotelStore.ReservationMade += OnReservationMode;
+            _carAgencyStore.ReservationMade += OnReservationMode;
             _reservations.CollectionChanged += OnReservationsChanged;
         }
 
         public override void Dispose()
         {
-            _hotelStore.ReservationMade -= OnReservationMode;
+            _carAgencyStore.ReservationMade -= OnReservationMode;
             base.Dispose();
         }
 
@@ -79,9 +79,9 @@ namespace CarAgency.ViewModels
             _reservations.Add(reservationViewModel);
         }
 
-        public static ReservationListingViewModel LoadViewModel(CarAgencyStore hotelStore, NavigationService<MakeReservationViewModel> makeReservationNavigationService)
+        public static ReservationListingViewModel LoadViewModel(CarAgencyStore CarAgencyStore, NavigationService<MakeReservationViewModel> makeReservationNavigationService)
         {
-            ReservationListingViewModel viewModel = new ReservationListingViewModel(hotelStore, makeReservationNavigationService);
+            ReservationListingViewModel viewModel = new ReservationListingViewModel(CarAgencyStore, makeReservationNavigationService);
 
             viewModel.LoadReservationsCommand.Execute(null);
 
